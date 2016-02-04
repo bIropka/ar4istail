@@ -11,6 +11,7 @@
     font-family: "Exo2 Bold", sans-serif;
     font-size: 18px;
     color: #361209;
+    font-weight: 100;
 }
 .clearfix {clear: both;}
 
@@ -48,11 +49,11 @@ body {
     margin-top: 10%;
 }
 .call-us-form .form-header {
+    width: 100%;
     text-align:center;
-    background: transparent url("../images/background-form-leather.png") no-repeat;
-    background-size: contain;
+    background: transparent url("../images/bg_form.png") no-repeat right center;
+    background-size: cover;
     padding: 6px 0 15px;
-    margin-bottom: 7%;
 }
 .call-us-form .title {color:#ffffff;font-size:1.2em;}
 .call-us-form .call-me-icon {
