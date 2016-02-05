@@ -47,6 +47,9 @@ body {
     border: 4px solid #361209;
     background: transparent url("../images/background-form.jpg") no-repeat;
     margin-top: 10%;
+    -webkit-box-shadow: 0 6px 5px -5px #000000;
+    -moz-box-shadow: 0 6px 5px -5px #000000;
+    box-shadow: 0 6px 6px -5px #000000;
 }
 .call-us-form .form-header {
     width: 100%;
@@ -54,15 +57,10 @@ body {
     background: transparent url("../images/bg_form.png") no-repeat right center;
     background-size: cover;
     padding: 6px 0 15px;
+    margin-bottom: 20px;
 }
 .call-us-form .title {color:#ffffff;font-size:1.2em;}
-.call-us-form .call-me-icon {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background: transparent url("../images/sprite.png") no-repeat right center;
-    background-size: cover;
-}
+.call-us-form .fa-pencil-square-o {color: white;}
 .call-us-form label {
     display: block;
     width: 80%;
@@ -74,7 +72,10 @@ body {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    padding: 8px;
+    padding: 8px 15px;
+    -webkit-box-shadow: inset 0 6px 5px -5px #000000;
+    -moz-box-shadow: inset 0 6px 5px -5px #000000;
+    box-shadow: inset 0 6px 5px -5px #000000;
 }
 input::-webkit-input-placeholder {color: #361209;opacity: 1;text-align: center;}
 input::-moz-placeholder {color: #361209;opacity: 1;text-align: center;}
@@ -89,15 +90,16 @@ input:focus:-ms-input-placeholder {color: transparent;}
     margin: 0 10% 10% 10%;
     text-transform: uppercase;
     background: transparent url("../images/background-button.jpg");
-    background-size: 100% 100%;
+    background-size: contain;
     color: white;
     border: none;
     padding: 10px;
     font-family: "Opensans Extrabold", sans-serif;
     cursor: pointer;
+    -webkit-box-shadow: 0 6px 5px -5px #000000;
+    -moz-box-shadow: 0 6px 5px -5px #000000;
+    box-shadow: 0 6px 5px -5px #000000;
 }
-
-
 .right-column {
     width: 880px;
     float: right;
@@ -110,33 +112,21 @@ input:focus:-ms-input-placeholder {color: transparent;}
 .social-block {
     display: inline-block;
     text-align: left;
-    background: transparent url('../images/back-arrow.png') no-repeat center right;
+    background: transparent url('../images/back-arrow.png') no-repeat 100% 60%;
+    background-size: 50% 60%;
     padding-right: 20px;
     vertical-align: middle;
 }
 .social-block .title, .phone-block .title {width: 100%;}
-.social-block .inst-icon, .social-block .fb-icon {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background: transparent url('../images/sprite.png') no-repeat 0 center;
-    background-size: cover;
-}
-.social-block .fb-icon {background: transparent url('../images/sprite.png') no-repeat 33% center;background-size: cover;}
+.social-block .fa-instagram, .social-block .fa-facebook-square {cursor: pointer;font-size: 1.4em;margin-top:2px;}
 .phone-block {
     display: inline-block;
     margin: 0 60px;
     vertical-align: middle;
     text-align: left;
 }
-.phone-block .phone-number {display: inline-block;line-height: 25px;vertical-align: top;}
-.phone-block .phone-icon {
-    display: inline-block;
-    width: 20px;
-    height: 25px;
-    background: transparent url('../images/sprite.png') no-repeat 68% center;
-    background-size: cover;
-}
+.phone-block .phone-number {display: inline-block;line-height: 25px;vertical-align: top; font-size: 1.2em;}
+.phone-block .fa-mobile {font-size: 1.6em;}
 .call-us-button {
     display: inline-block;
     background: transparent;
@@ -167,6 +157,7 @@ nav ul li a {
     color: #ffffff;
     font-size: 1.1em;
     line-height: 60px;
+    outline: none;
 }
 .content-block {
     width: 680px;
@@ -188,4 +179,9 @@ nav ul li a {
 .wrap-background-fix {
     position: absolute;
     height: 100%;
+    width: 6.588579795021962%;
+    right: 0;
+    top: 0;
+    background: transparent url('../images/background-part.png');
+    background-size: cover;
 }
