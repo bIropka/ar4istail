@@ -130,7 +130,24 @@ input:focus:-ms-input-placeholder {color: transparent;}
     vertical-align: middle;
 }
 .social-block .title, .phone-block .title {width: 100%;}
-.social-block .fa-instagram, .social-block .fa-facebook-square {cursor: pointer;font-size: 1.4em;margin-top:2px;margin-right:5px;}
+.social-block .fa-instagram, .social-block .fa-facebook-square {
+    cursor: pointer;
+    font-size: 1.4em;
+    margin-top:2px;
+    margin-right:5px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.social-block .fa-instagram:hover, .social-block .fa-facebook-square:hover {
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+}
 .phone-block, .email-block {
     display: inline-block;
     margin: 0 6.818182%;
