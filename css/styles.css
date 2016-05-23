@@ -23,17 +23,19 @@ body {
     width: 100%;
     height: 100%;
     background: #150705;
-    display: flex;
 }
 
 .wrap {
-    width: 100%;
-    max-width: 1366px;
+    width: 1366px;
     height: 740px;
     background: transparent url("../images/background.jpg") no-repeat;
     background-size: contain;
     margin: auto;
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .left-column {
     width: 25.622255%;
@@ -220,11 +222,19 @@ nav ul li a:hover {border-bottom:none;}
     text-align: justify;
 }
 .footer-block {
-    width: 50%;
-    margin: 5% auto 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     color: #390e07;
-    font-size: 1.35em;
     text-align: center;
+}
+.footer-block p {
+    display: inline-block;
+    width: 300px;
+    font-size: 24px;
+    text-align: right;
+    padding-bottom: 15px;
 }
 .wrap-background-fix {
     position: absolute;
@@ -234,6 +244,97 @@ nav ul li a:hover {border-bottom:none;}
     top: 0;
     background: transparent url('../images/background-part.png');
     background-size: cover;
+}
+/******** services-page *********/
+.services-page p {
+    font-family: "OpenSans Semibold", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.4;
+}
+.services-page a {
+    font-family: "OpenSans Extrabold", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+.services-page a:hover {
+    text-decoration: none;
+}
+/******** gallery-page *********/
+.slider {
+    margin-left: -20px;
+}
+.slide {
+    width: 190px;
+    height: 190px;
+    margin: 10px 20px;
+}
+.slide img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #361209;
+}
+.slider-control {
+    display: block;
+    width: 190px;
+    height: 50px;
+    margin: 20px 0 0 235px;
+    text-transform: uppercase;
+    background: transparent url("../images/bg_button.png");
+    background-size: cover;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    font-family: "Opensans Extrabold", sans-serif;
+    cursor: pointer;
+    -webkit-box-shadow: 0 6px 5px -5px #000000;
+    -moz-box-shadow: 0 6px 5px -5px #000000;
+    box-shadow: 0 6px 5px -5px #000000;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.slider-control:active {
+    padding: 11px 0 9px;
+}
+/******** reviews-page *********/
+.reviews-page, .contacts-page {
+    text-align: left;
+}
+.reviews-page p, .contacts-page p {
+    font-family: "OpenSans Semibold", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.4;
+    margin: 10px 0;
+}
+.reviews-page a, .contacts-page-page a {
+    display: inline-block;
+    text-align: left;
+    font-family: "OpenSans Extrabold", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+.reviews-page a:hover, .contacts-page a:hover {
+    text-decoration: none;
+}
+/******** contacts-page *********/
+.contacts-page p span {
+    font-size: 20px;
+}
+.contacts-page .sub-title {
+    margin-top: 20px;
+}
+.contacts-page .value {
+    font-size: 24px;
+}
+.contacts-page .value i {
+    padding-right: 10px;
+}
+.contacts-page .fa-pencil-square-o {
+    font-size: 20px;
 }
 /******** window **********/
 .window-callback {
@@ -262,7 +363,7 @@ nav ul li a:hover {border-bottom:none;}
     background: #390e07;
     font-size: 1.2em;
 }
-/***** enf of window ******/
+/***** enf of window ******
 @media (max-width: 1290px) {
     .contacts {margin: 5% 0 1.7%;}
     .phone-block {margin: 0 3%;}
